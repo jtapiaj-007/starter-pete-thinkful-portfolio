@@ -16,11 +16,6 @@ h3 {
   text-align: center;
 }
 
-/* Header */
-header {
-  text-align: center;
-}
-
 /* Containers */
 div {
   background-color: #eae2b7;
@@ -33,7 +28,6 @@ article {
 }
 
 article div {
-  text-align: center;
   width: 100%;
 }
 
@@ -51,8 +45,62 @@ a:hover {
   color: #f77f00;
 }
 
-nav a {
-  padding-left: 20px;
+/* HEADER */
+.flex-header {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+/* left side */
+.flex-header h1 {
+  flex: 0.55;
+}
+
+/* right side */
+.flex-header nav {
+  flex: 0.45;
+  text-align: center;
+}
+
+.flex-header a {
+  margin: 10px;
+}
+
+/* ABOUT */
+.section-about {
+  display: flex;
+  justify-content: center;
+}
+
+.about-left, .about-right {
+  flex: 0.5;
+}
+
+/* PORTAFOLIO */
+.section-portafolio {
+  display: flex;
+}
+
+.portfolio-abstract, .portfolio-spiral, .portfolio-rainbow {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0px;
+  flex: 1;
+}
+
+.portfolio-abstract div, .portfolio-spiral div, .portfolio-rainbow div {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.portfolio-abstract p, .portfolio-spiral p, .portfolio-rainbow p {
+  text-align: center;
+  font-size: 14px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 /* Images */
